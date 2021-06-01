@@ -4,6 +4,10 @@ import router from './router'
 import store from './store'
 import vuetify from './plugins/vuetify'
 import loading from './components/Loading'
+import VueHead from 'vue-head'
+
+
+Vue.use(VueHead)
 
 Vue.config.productionTip = false
 

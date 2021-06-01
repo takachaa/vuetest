@@ -17,13 +17,27 @@ import Loading from 'vue-loading-overlay';
 import 'vue-loading-overlay/dist/vue-loading.css';
 import Modal from '../components/ModalWindow'
 
+
 export default {
   data() {
     return {
     isLoading: false,
     fullPage: true,
-    showContent:false
+    showContent:false,
+    title: 'My Title'
     }
+  },
+  head: {
+    title() {
+      return {
+        inner: 'TTTOOTT',
+        separator: '|',
+        complement: 'DKOSDK',
+      }
+    },
+    meta: [
+      { name: 'description', content: 'My description', id: 'desc' }
+    ]
   },
   components: {
     "loading":Loading,
