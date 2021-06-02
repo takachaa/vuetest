@@ -5,8 +5,9 @@ import store from './store'
 import vuetify from './plugins/vuetify'
 import loading from './components/Loading'
 import VueHead from 'vue-head'
+import InfiniteLoading from 'vue-infinite-loading'
 
-
+Vue.use(InfiniteLoading)
 Vue.use(VueHead)
 
 Vue.config.productionTip = false

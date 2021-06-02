@@ -8,6 +8,7 @@ import Board from '../views/Board'
 import DirectJob from '../views/DirectJob'
 import Photo from '../views/Photo'
 import Scroll from '../views/Scroll'
+import Scroll2 from '../views/Scroll2'
 
 import store from '../store'
 
@@ -123,7 +124,21 @@ const routes = [
       }
       
     }
+  },
+  {
+    path: '/scroll2',
+    name: 'Scroll2',
+    component: Scroll2,
+    beforeEnter(to, from , next){
+      if(store.getters.idToken){
+        next();
+      }else{
+        next('/')
+      }
+      
+    }
   }
+
 ]
 
 const router = new VueRouter({

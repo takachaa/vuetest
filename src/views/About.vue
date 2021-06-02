@@ -36,9 +36,14 @@ export default {
       }
     },
     meta: [
-      { name: 'description', content: 'My description', id: 'desc' }
-    ]
+    { name: 'description', content: 'descriptionの内容が入ります。' },
+    { name: 'viewport', content: 'width=device-width,initial-scale=1.0,user-scalable=no' },
+    { charset: 'utf-8' },
+    { property: 'og:type', content: 'website' },
+    // ... 
+  ],
   },
+  
   components: {
     "loading":Loading,
     "Modal":Modal

@@ -65,6 +65,10 @@
           <span>Scroll</span>
           <router-link to="/scroll"><v-icon>mdi-file-image</v-icon></router-link>
         </v-btn>
+        <v-btn value="Scroll2">
+          <span>Scroll2</span>
+          <router-link to="/scroll2"><v-icon>mdi-file-image</v-icon></router-link>
+        </v-btn>
       </template>
     </v-bottom-navigation>
   </v-card>
